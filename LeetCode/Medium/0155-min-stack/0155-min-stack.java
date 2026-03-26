@@ -1,16 +1,27 @@
 class MinStack {
     private Stack<Integer> stack;
+    private Stack<Integer> minStack;
 
     public MinStack() {
         stack = new Stack();
+        minStack = new Stack();
     }
 
     public void push(int val) {
+        int min = val;
+        if (!minStack.isEmpty() && min > minStack.peek()) {
+            min = minStack.peek();
+        }
         stack.push(val);
+        minStack.push(min);
+
     }
 
     public void pop() {
+        if (stack.isEmpty())
+            return;
         stack.pop();
+        minStack.pop();
     }
 
     public int top() {
@@ -18,10 +29,9 @@ class MinStack {
     }
 
     public int getMin() {
-        return stack.stream().mapToInt(Integer::intValue).min().orElse(Integer.MAX_VALUE);
+        return minStack.peek();
     }
 }
-
 
 /**
  * Your MinStack object will be instantiated and called as such:
