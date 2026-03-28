@@ -3,37 +3,40 @@ class Solution {
         return solution(tokens);
     }
 
-     public static int solution(String[] tokens) {
-        List<String> list = new ArrayList<>(Arrays.asList(tokens));
+   
+    public static int solution(String []tokens)
+    {
+       Stack<Integer> stack=new Stack<>();
 
-        while (list.size() > 1) {
-            for (int i = 0; i < list.size(); i++) {
-                String token = list.get(i);
-
-                if ("+-*/".contains(token)) {
-                    int a = Integer.parseInt(list.get(i - 2));
-                    int b = Integer.parseInt(list.get(i - 1));
-                    int result = 0;
-                    if (token.equals("+")) {
-                        result = a + b;
-                    } else if (token.equals("-")) {
-                        result = a - b;
-                    } else if (token.equals("*")) {
-                        result = a * b;
-                    } else if (token.equals("/")) {
-                        result = a / b;
-                    }
-
-                    list.set(i - 2, String.valueOf(result));
-                    list.remove(i);
-                    list.remove(i - 1);
-                    break;
-                }
-            }
+    for(String c:tokens)
+    {
+        if(c.equals("+"))
+        {
+            stack.push(stack.pop()+ stack.pop());
         }
+        else if(c.equals("-"))
+        {
+            int a=stack.pop();
+            int b=stack.pop();
 
-        return Integer.parseInt(list.get(0));
+            stack.push(b-a);
+        }
+        else if(c.equals("*"))
+        {
+            stack.push(stack.pop()*stack.pop());
+        }
+        else if(c.equals("/"))
+        {
+               int a=stack.pop();
+            int b=stack.pop();
+
+            stack.push(b/a);
+        }
+        else {
+            stack.push(Integer.parseInt(c));
+        }
     }
-    
+    return stack.pop();
+    }
 
 }
