@@ -5,19 +5,22 @@ class Solution {
 
     public static int[] solution(int []temperatures)
     {
-        Stack<int[]> stack=new Stack<>();
-        int []result=new int [temperatures.length];
+        int n = temperatures.length;
+        int[] result = new int[n];
 
-        for(int i=0;i<temperatures.length;i++)
-        {
-            int t=temperatures[i];
-
-            while(!stack.isEmpty()&& t >  stack.peek()[0])
-            {
-                int []pop=stack.pop();
-                result[pop[1]]=i-pop[1];
+        for (int i = n - 2; i >= 0; i--) {
+            int j = i + 1;
+            while (j < n && temperatures[j] <= temperatures[i]) {
+                if (result[j] == 0) {
+                    j = n;
+                    break;
+                }
+                j += result[j];
             }
-            stack.push(new int[]{t,i});
+
+            if (j < n) {
+                result[i] = j - i;
+            }
         }
 
         return result;
