@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
 | [0739-daily-temperatures](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
+| [0875-koko-eating-bananas](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -49,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
