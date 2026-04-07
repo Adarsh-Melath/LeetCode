@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0177-nth-highest-salary](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0177-nth-highest-salary/) | Medium |
+| [1050-actors-and-directors-who-cooperated-at-least-three-times](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1050-actors-and-directors-who-cooperated-at-least-three-times/) | Easy |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
