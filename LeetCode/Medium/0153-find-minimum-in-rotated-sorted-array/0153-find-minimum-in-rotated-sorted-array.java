@@ -6,23 +6,16 @@ class Solution {
     public static int solution(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        int res = nums[left];
 
-        while (left <= right) {
-            if (nums[left] < nums[right]) {
-                res = Math.min(nums[left], res);
-                break;
-            }
-
+        while (left < right) {
             int mid = (left + right) / 2;
-            res = Math.min(res, nums[mid]);
-            if (nums[mid] >= nums[left]) {
+            if (nums[mid] > nums[right])
                 left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
+            else
+                right = mid;
         }
-        return res;
+
+        return nums[left];
     }
 
 }
