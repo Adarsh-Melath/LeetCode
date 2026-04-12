@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Adarsh-Melath/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -24,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0155-min-stack](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0155-min-stack/) | Medium |
+| [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -56,8 +58,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
+| [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 <!---LeetCode Topics End-->
