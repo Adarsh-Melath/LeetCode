@@ -11,11 +11,13 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
+
+        //brute 
         Map<ListNode, Integer> linkMap = new HashMap<>();
         ListNode current = head;
 
         while (current != null) {
-            if (linkMap.containsKey(current.next)) {
+            if (linkMap.containsKey(current)) {
                 return true;
             }
 
