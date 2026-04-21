@@ -9,15 +9,15 @@
  * }
  */
 public class Solution {
-    public void reorder(ListNode head)
+    public void reorderList(ListNode head)
     {
         if(head==null || head.next==null) return;
 
         //find middle
         ListNode slow=head;
-        ListNode fast=fast;
+        ListNode fast=head;
 
-        while(fast.next!=null  && fast.next.next)
+        while(fast.next!=null  && fast.next.next!=null)
         {
             slow=slow.next;
             fast=fast.next.next;
