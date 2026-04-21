@@ -9,48 +9,72 @@
  * }
  */
 public class Solution {
-    public void reorderList(ListNode head) {
-        if (head == null || head.next == null) return;
+    public void reorder(ListNode head)
+    {
+        if(head==null || head.next==null) return;
 
-        // STEP 1: Find middle
-        ListNode slow = head;
-        ListNode fast = head;
+        //find middle
+        ListNode slow=head;
+        ListNode fast=fast;
 
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+        while(fast.next!=null  && fast.next.next)
+        {
+            slow=slow.next;
+            fast=fast.next.next;
         }
 
-        // STEP 2: Reverse second half
-        ListNode second = reverse(slow.next);
-        slow.next = null; // cut the list
+        //reverse
+        ListNode second=reverse(slow.next);
+        slow.next=null;
 
-        // STEP 3: Merge
-        ListNode first = head;
+        //merge
+        ListNode first=head;
 
-        while (second != null) {
-            ListNode temp1 = first.next;
-            ListNode temp2 = second.next;
+        while(second!=null)
+        {
+            ListNode temp1=first.next;
+            ListNode temp2=second.next;
 
-            first.next = second;
-            second.next = temp1;
+            first.next=second;
+            second.next=temp1;
 
-            first = temp1;
-            second = temp2;
+            first=temp1;
+            second=temp2;
         }
     }
 
-    private ListNode reverse(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
+    public static ListNode reverse(ListNode head)
+    {
+        ListNode prev=null;
+        ListNode curr=head;
 
-        while (curr != null) {
-            ListNode next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        while(curr!=null)
+        {
+            ListNode next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
         }
 
         return prev;
     }
+
+    //     // STEP 2: Reverse second half
+    //     ListNode second = reverse(slow.next);
+    //     slow.next = null; // cut the list
+
+    //     // STEP 3: Merge
+    //     ListNode first = head;
+
+    //     while (second != null) {
+    //         ListNode temp1 = first.next;
+    //         ListNode temp2 = second.next;
+
+    //         first.next = second;
+    //         second.next = temp1;
+
+    //         first = temp1;
+    //         second = temp2;
+    //     }
+    // }
 }
