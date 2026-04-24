@@ -15,32 +15,34 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
-       Map<Node,Node> oldToNewMap=new HashMap<>();
+        Map<Node, Node> oldToNew = new HashMap<>();
 
-       Node dummyNode=new Node(0);
-       Node current=dummyNode;
+        Node dummy = new Node(0);
+        Node current = dummy;
 
-        // First pass: Create all nodes and build the next pointers
-        // Also populate the mapping from original to copied nodes
-        Node currentOriginal=head;
-        while(currentOriginal!=null)
-        {
-            Node newNode=new Node(currentOriginal.val);
+        // Pass 1
+        Node currentOriginal = head;
+        while (currentOriginal != null) {
+            Node copiedNode = new Node(currentOriginal.val);
 
-            current.next=newNode;
-            current=newNode;
-            oldToNewMap.put(currentOriginal,newNode);
-            currentOriginal=currentOriginal.next;
+            current.next = copiedNode;
+            current = copiedNode;
+
+            //store it in map
+            oldToNew.put(currentOriginal, copiedNode);
+            currentOriginal = currentOriginal.next;
         }
 
+        //Pass 2
         currentOriginal=head;
         while(currentOriginal!=null)
         {
-            Node copyNode=oldToNewMap.get(currentOriginal);
+            Node copiedNode=oldToNew.get(currentOriginal);
 
-            copyNode.random=(currentOriginal.random==null)?null : oldToNewMap.get(currentOriginal.random);
+            copiedNode.random=(currentOriginal.random==null)?null:oldToNew.get(currentOriginal.random);
             currentOriginal=currentOriginal.next;
         }
-        return dummyNode.next;
+
+        return dummy.next;
     }
 }
