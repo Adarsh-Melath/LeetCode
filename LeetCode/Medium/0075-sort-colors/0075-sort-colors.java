@@ -3,10 +3,10 @@ class Solution {
 
         //Dutch National flag
         int low=0;
-        int high=nums.length;
+        int high=nums.length-1;
         int mid=0;
 
-        while(mid<high)
+        while(mid<=high)
         {
             if(nums[mid]==2)
             {
@@ -21,6 +21,7 @@ class Solution {
                 nums[low]=temp;
 
                 low++;
+                mid++;
             }
         }
 
