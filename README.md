@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
+| [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0033-search-in-rotated-sorted-array/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
@@ -111,6 +112,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0125-valid-palindrome](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0125-valid-palindrome/) | Easy |
@@ -151,4 +153,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0226-invert-binary-tree/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
 <!---LeetCode Topics End-->
