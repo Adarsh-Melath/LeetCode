@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Adarsh-Melath/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0143-reorder-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0143-reorder-list/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0155-min-stack](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0155-min-stack/) | Medium |
@@ -39,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0033-search-in-rotated-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0033-search-in-rotated-sorted-array/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
+| [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
@@ -60,6 +62,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0739-daily-temperatures](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
 ## Sorting
@@ -124,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0018-4sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0125-valid-palindrome](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0125-valid-palindrome/) | Easy |
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
@@ -135,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0198-house-robber](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0198-house-robber/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
