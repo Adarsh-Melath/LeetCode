@@ -7,7 +7,8 @@ class Solution {
             sum += arr[i];
         }
 
-        if(sum >=(k*threshold))count++;
+        int target=(k*threshold);
+        if(sum >=target)count++;
         int start = 0;
         int end = k;
 
@@ -15,7 +16,7 @@ class Solution {
             sum-=arr[start++];
             sum+=arr[end++];
 
-           if(sum >=(k*threshold))count++;
+           if(sum >=target)count++;
         }
 
         return count;
