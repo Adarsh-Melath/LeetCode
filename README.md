@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0198-house-robber/) | Medium |
 | [0283-move-zeroes](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
+| [0643-maximum-average-subarray-i](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
 | [0739-daily-temperatures](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0739-daily-temperatures/) | Medium |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
@@ -173,4 +174,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0643-maximum-average-subarray-i](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 <!---LeetCode Topics End-->
