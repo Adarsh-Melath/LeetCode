@@ -1,37 +1,23 @@
 class Solution {
-    public int numOfSubarrays(int[] arr, int k, int threshold) {
-        //optimal
+    public int numOfSubarrays(int[] nums, int k, int threshold) {
         int sum = 0;
         int count = 0;
         for (int i = 0; i < k; i++) {
-            sum += arr[i];
+            sum += nums[i];
         }
 
-        int target=(k*threshold);
-        if(sum >=target)count++;
-        int start = 0;
-        int end = k;
+        if (sum >= (k * threshold))
+            count++;
 
-        while (end < arr.length) {
-            sum-=arr[start++];
-            sum+=arr[end++];
+        int left = 0;
+        int right = k;
 
-           if(sum >=target)count++;
+        while (right < nums.length) {
+            sum = sum - nums[left] + nums[right];
+
+            if(sum>=(k*threshold))count++;
+            right++;left++;
         }
-
-        return count;
-        //brute
-        // int count=0;
-        // for(int i=0;i<arr.length-k+1;i++){
-        //     int sum=0;
-        //     for(int j=i;j<i+k;j++){
-        //         sum+=arr[j];
-        //     }
-
-        //     int avg=(int) sum/k;
-        //     if(avg>=threshold)count++;
-        // }
-
-        // return count;
+return count;
     }
 }
