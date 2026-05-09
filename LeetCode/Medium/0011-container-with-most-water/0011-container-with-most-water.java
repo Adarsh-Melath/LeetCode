@@ -9,9 +9,8 @@ class Solution {
             int width=right-left;
             maxArea=Math.max(maxArea,width*min);
 
-            if(nums[left]<nums[right]){
-                left++;
-            }else right--;
+            while(left<right && nums[left]<=min)left++;
+            while(left<right && nums[right]<=min)right--;
         }
 
         return maxArea;
