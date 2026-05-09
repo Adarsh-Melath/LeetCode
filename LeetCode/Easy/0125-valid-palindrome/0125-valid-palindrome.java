@@ -2,10 +2,8 @@ class Solution {
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();
 
-        System.out.println("lower case: " + s);
         s = s.replaceAll("[^a-zA-Z0-9]","");
-        System.out.println("replaced :  " +s);
-
+        
         int left = 0;
         int right = s.length() - 1;
 
