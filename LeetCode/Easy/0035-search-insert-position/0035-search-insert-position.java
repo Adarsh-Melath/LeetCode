@@ -17,6 +17,6 @@ class Solution {
                 left = mid + 1;
             }
         }
-        return position  !=-1 ? position : nums.length;
+        return position  !=-1 ? position : left;
     }
 }
