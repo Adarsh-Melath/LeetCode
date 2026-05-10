@@ -13,7 +13,6 @@ class Solution {
             map.put(r, map.getOrDefault(r, 0) + 1);
 
             major = Math.max(major, map.get(s.charAt(right)));
-            int remaining = (right - left + 1) - major;
             while ((right - left + 1) - major > k) {
                 char l = s.charAt(left);
                 map.put(l, map.getOrDefault(l, 0) - 1);
