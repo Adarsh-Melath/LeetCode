@@ -1,88 +1,95 @@
 class Solution {
     public String minWindow(String s, String t) {
-        //approach 2 (optimal)
-        int left = 0;
-        int []targetFreq = new int[128];
-        int []windowFreq = new int[128];
+        if (s.length() < t.length())
+            return "";
+        if (s.equals(t))
+            return s;
+
+        //optimal approach
+
+        int targetFreq[] = new int[128];
+        int windowFreq[] = new int[128];
+
+        int targetLength = t.length();
+        int sourceLength = s.length();
+        int minWindowStart = -1;
+        int minWindowLength =s.length() + 1;
+
+        int validCount = 0;
 
         for (char ch : t.toCharArray()) {
             targetFreq[ch]++;
         }
 
-        int sourceLength = s.length();
-        int targetLength = t.length();
-
-        int minWindowStart = -1;
-        int minWindowLength = sourceLength + 1;
-        int validCount = 0;
-
+        int left = 0;
         for (int right = 0; right < s.length(); right++) {
-            char rightChar = s.charAt(right);
-            windowFreq[rightChar]++;
+            char rch = s.charAt(right);
 
-            if (windowFreq[rightChar] <= targetFreq[rightChar])
+            windowFreq[rch]++;
+
+            if (windowFreq[rch] <= targetFreq[rch]) {
                 validCount++;
+            }
 
             while (validCount == targetLength) {
+                char lch = s.charAt(left);
 
                 if (right - left + 1 < minWindowLength) {
                     minWindowLength = right - left + 1;
                     minWindowStart = left;
                 }
 
-                char leftCh = s.charAt(left);
-
-                if (windowFreq[leftCh] <= targetFreq[leftCh]) {
+                if (windowFreq[lch] <= targetFreq[lch]) {
                     validCount--;
                 }
-
-                windowFreq[leftCh]--;
+                windowFreq[lch]--;
                 left++;
             }
+
         }
+            return minWindowStart < 0 ? "" : s.substring(minWindowStart,minWindowStart+minWindowLength); 
+        //brute force
+        //     String string = "";
+        //     int minLength=Integer.MAX_VALUE;
+        //     Map<Character, Integer> map2 = new HashMap<>();
+        //     for (char ch : t.toCharArray()) {
+        //         map2.put(ch, map2.getOrDefault(ch, 0) + 1);
+        //     }
 
-        return minWindowStart<0 ? "": s.substring(minWindowStart, minWindowStart+ minWindowLength);
+        //     System.out.println("map2" + map2);
 
-        //approach 1
-        // if (s.length() < t.length())
-        //     return "";
-        // if (s.length() == t.length() && s.equals(t))
-        //     return s;
-
-        // String min = "";
-        // for (int i = 0; i < s.length(); i++) {
-        //     for (int j = i; j < s.length(); j++) {
-        //         if (checkItContains(s, i, j, t)) {
-
-        //             if (min == "") {
-        //                 min = s.substring(i, j + 1);
-        //                 break;
-        //             } else {
-        //                 if (min.length() > j - i + 1)
-        //                     min = s.substring(i, j + 1);
+        //     for (int i = 0; i < s.length(); i++) {
+        //         for (int j = i; j < s.length(); j++) {
+        //             if (check(s, t, map2, i, j)) {
+        //                 if ((j - i + 1) <minLength ) {
+        //                     string = s.substring(i, j +1);
+        //                     minLength=j+1-i;
+        //                     System.out.println( " length : "+(j-i+1));
+        //                 }
+        //                     break  ; 
         //             }
         //         }
         //     }
+
+        //     return string;
         // }
-        // return min;
+
+        // public boolean check(String string1, String string2, Map<Character, Integer> map2, int i, int j) {
+        //     Map<Character, Integer> map = new HashMap<>();
+        //     for (int start = i; start <=j; start++) {
+        //         map.put(string1.charAt(start), map.getOrDefault(string1.charAt(start), 0) + 1);
+        //     }
+        //     System.out.println("map1 : " + map);
+        //     for (char ch : string2.toCharArray()) {
+        //         if (!map.containsKey(ch) || map.get(ch) < map2.get(ch)) {
+        //             System.out.println("character : "+ch);
+        //             System.out.println(" the reason : " + (map.containsKey(ch) && map.get(ch) < map2.get(ch))
+        //                     + "map 1 value : " + map.get(ch) +
+        //                     "map 2 value : " + map2.get(ch));
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+
     }
-
-    // public boolean checkItContains(String s, int i, int j, String t) {
-    //     Map<Character, Integer> string1 = new HashMap<>();
-    //     Map<Character, Integer> string2 = new HashMap<>();
-
-    //     for (int index1 = i; index1 <= j; index1++) {
-    //         string1.put(s.charAt(index1), string1.getOrDefault(s.charAt(index1), 0) + 1);
-    //     }
-
-    //     for (int index2 = 0; index2 < t.length(); index2++) {
-    //         string2.put(t.charAt(index2), string2.getOrDefault(t.charAt(index2), 0) + 1);
-    //     }
-    //     for (char ch : string2.keySet()) {
-    //         if (!string1.containsKey(ch) || (string1.get(ch) < string2.get(ch)))
-    //             return false;
-    //     }
-
-    //     return true;
-    // }
 }
