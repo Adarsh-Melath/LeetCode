@@ -1,16 +1,28 @@
 class Solution {
     public int search(int[] nums, int target) {
-        return brute(nums,target);
-    }
+        // int left=0;
+        // int right=nums.length-1;
 
-      public static int brute(int[] nums, int target) {
-        int index = -1;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == target) {
-                index = i;
-                break;
+        // while(left<=right){
+        //     int mid=left+(right-left)/2;
+
+        //     if(nums[mid]==target)return mid;
+        //     else if (nums[0] > target && nums[mid]>target){
+        //         left=mid+1;
+        //     }else{
+        //         right=mid-1;
+        //     }
+        // }
+
+        // return -1;
+
+        //brute
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==target){
+                return i ; 
             }
         }
-        return index;
+
+        return -1;
     }
 }
