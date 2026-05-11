@@ -3,7 +3,6 @@ class Solution {
         int start=lowerBound(nums,target);
         if(start==nums.length || nums[start]!=target)return new int []{-1,-1};
         int end=upperBound(nums,target);
-        System.out.println(start);
 
         return new int[]{start,end};
     }
