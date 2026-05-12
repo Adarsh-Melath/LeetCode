@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0744-find-smallest-letter-greater-than-target/) | Easy |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 ## Math
@@ -96,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0744-find-smallest-letter-greater-than-target/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0875-koko-eating-bananas/) | Medium |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
