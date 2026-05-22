@@ -7,7 +7,5 @@ class Solution {
         }
 
         Arrays.sort(nums1);
-
-        System.out.println(Arrays.toString(nums1));
     }
 }
