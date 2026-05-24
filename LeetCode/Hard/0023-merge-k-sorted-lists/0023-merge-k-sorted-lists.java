@@ -10,17 +10,32 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        //better
-        if (lists.length == 0) {
-            return null;
+        // optimal
+
+        if(lists.length==0)return null;
+        PriorityQueue<ListNode> pq=new PriorityQueue<>((a,b)->a.val-b.val);
+
+        for(ListNode node:lists){
+           if(node!=null){
+             pq.offer(node);
+           }
         }
 
-        ListNode merged = lists[0];
+        ListNode dummy=new ListNode(-1);
+        ListNode current=dummy;
 
-        for (int i = 1; i < lists.length; i++) {
-            merged=merge(merged,lists[i]);
+        while(!pq.isEmpty()){
+            ListNode node=pq.poll();
+
+            current.next=node;
+            current=current.next;
+
+            if(node.next!=null){
+                pq.offer(node.next);
+            }
         }
-        return merged;
+
+        return dummy.next;
     }
 
     public ListNode merge(ListNode list1,ListNode list2){
