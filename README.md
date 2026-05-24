@@ -136,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0002-add-two-numbers/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0021-merge-two-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0021-merge-two-sorted-lists/) | Easy |
+| [0023-merge-k-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0138-copy-list-with-random-pointer](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
 | [0143-reorder-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0143-reorder-list/) | Medium |
@@ -215,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
@@ -227,9 +229,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Merge Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
 <!---LeetCode Topics End-->
