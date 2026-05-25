@@ -7,56 +7,55 @@ class Solution {
         if (low >= high) {
             return 0;
         }
+
         int mid = low + (high - low) / 2;
         int count = 0;
+
         count += mergeSort(nums, low, mid);
         count += mergeSort(nums, mid + 1, high);
         count += countPairs(nums, low, mid, high);
         merge(nums, low, mid, high);
+
         return count;
     }
 
-    public int countPairs(int[]nums,int low,int mid,int high){
-        int right=mid+1;
+    public int countPairs(int[] nums, int low, int mid, int high) {
+        int right = mid + 1;
+        int count = 0;
 
-        int count=0;
-        for(int i=low;i<=mid;i++){
-            while(right<=high && nums[i]> 2L * nums[right]){
-                right++;
+        for (int i = low; i <= mid; i++) {
+            while (right <= high && nums[i]>2L*nums[right]) {
+              right++;
             }
-
-            count+=right-(mid+1);
+            count += right - (mid + 1);
         }
+
         return count;
     }
 
-    public void merge(int[]nums, int low,int mid,int high){
-        int []temp=new int[high-low+1];
+    public void merge(int[] nums, int low, int mid, int high) {
+        int[] temp = new int[high - low + 1];
+        int right = mid + 1;
+        int left = low;
+        int index = 0;
 
-        int left=low;
-
-        int right=mid+1;
-
-        int index=0;
-
-        while(left<=mid && right<=high){
-            if(nums[left]<=nums[right]){
-                temp[index++]=nums[left++];
-            }else{
-                temp[index++]=nums[right++];
-            }
+        while (left <= mid && right <= high) {
+            if (nums[left] <= nums[right]) {
+                temp[index++] = nums[left++];
+            } else
+                temp[index++] = nums[right++];
         }
 
-        while(left<=mid){
-            temp[index++]=nums[left++];
+        while (left <= mid) {
+            temp[index++] = nums[left++];
         }
 
-        while(right<=high){
-            temp[index++]=nums[right++];
+        while (right <= high) {
+            temp[index++] = nums[right++];
         }
 
-        for(int i=low;i<=high;i++){
-            nums[i]=temp[i-low];
+        for (int i = low; i <= high; i++) {
+            nums[i] = temp[i - low];
         }
     }
 }
