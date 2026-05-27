@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0035-search-insert-position/) | Easy |
+| [0039-combination-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
 | [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
@@ -131,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0039-combination-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
