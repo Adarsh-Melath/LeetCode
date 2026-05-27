@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
 | [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
+| [0046-permutations](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0046-permutations/) | Medium |
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
@@ -134,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
+| [0046-permutations](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0046-permutations/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
