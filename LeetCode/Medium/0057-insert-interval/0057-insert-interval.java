@@ -1,20 +1,20 @@
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        
-        List<int[]> output=new ArrayList<>();
+        List<int[]> result=new ArrayList<>();
 
         for(int i=0;i<intervals.length;i++){
             if(newInterval[1]<intervals[i][0]){
-                output.add(newInterval);
+                result.add(newInterval);
 
                 while(i<intervals.length){
-                    output.add(intervals[i]);
+                    result.add(intervals[i]);
                     i++;
                 }
 
-                return output.toArray(new int[output.size()][]);
-            }else if(newInterval[0]>intervals[i][1]){
-                output.add(intervals[i]);
+                return result.toArray(new int[result.size()][]);
+            }
+            else if(newInterval[0]>intervals[i][1]){
+                result.add(intervals[i]);
             }
             else {
                 newInterval[0]=Math.min(newInterval[0],intervals[i][0]);
@@ -22,7 +22,8 @@ class Solution {
             }
         }
 
-        output.add(newInterval);
-         return output.toArray(new int[output.size()][]);
+        result.add(newInterval);
+
+        return result.toArray(new int[result.size()][]);
     }
 }
