@@ -1,29 +1,63 @@
 class Solution {
-    int[][] graph;
-    boolean[] visited;
-
     public int findCircleNum(int[][] isConnected) {
-        graph = isConnected;
-        int n = graph.length;
-        visited = new boolean[n];
-        int count = 0;
+        int n = isConnected.length;
+        DSU dsu = new DSU(n);
 
         for (int i = 0; i < n; i++) {
-            if (!visited[i]) {
-                dfs(i);
-                count++;
+            for (int j = i + 1; j < n; j++) {
+                if (isConnected[i][j] == 1) {
+                    dsu.union(i, j);
+
+                }
             }
         }
-        return count;
+
+        return dsu.count;
+    }
+}
+
+class DSU {
+    int[] parent;
+    int[] size;
+    int count;
+
+    public DSU(int n) {
+        parent = new int[n];
+        size = new int[n];
+        count = n;
+
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+
+            size[i] = 1;
+        }
     }
 
-    public void dfs(int currentCity){
-        visited[currentCity]=true;
+    public int find(int x) {
+        if (parent[x] == x)
+            return x;
 
-        for(int nextCity=0;nextCity<graph.length;nextCity++){
-            if(!visited[nextCity] && graph[currentCity][nextCity]==1){
-                dfs(nextCity);
-            }
+        parent[x] = find(parent[x]);
+
+        return parent[x];
+    }
+
+    public void union(int x, int y) {
+        int rootOfX = find(x);
+        int rootOfY = find(y);
+
+        if (rootOfX == rootOfY) {
+            return;
         }
+
+        if (size[rootOfX] < size[rootOfY]) {
+            parent[rootOfX] = rootOfY;
+            size[rootOfY] += size[rootOfX];
+        } else {
+            parent[rootOfY] = rootOfX;
+            size[rootOfX] += size[rootOfY];
+        }
+
+        count--;
     }
 }
