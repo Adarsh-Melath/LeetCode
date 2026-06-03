@@ -7,7 +7,6 @@ class Solution {
             for (int j = i + 1; j < n; j++) {
                 if (isConnected[i][j] == 1) {
                     dsu.union(i, j);
-
                 }
             }
         }
@@ -24,18 +23,19 @@ class DSU {
     public DSU(int n) {
         parent = new int[n];
         size = new int[n];
-        count = n;
 
         for (int i = 0; i < n; i++) {
             parent[i] = i;
-
             size[i] = 1;
+
+            count = n;
         }
     }
 
     public int find(int x) {
-        if (parent[x] == x)
+        if (parent[x] == x) {
             return x;
+        }
 
         parent[x] = find(parent[x]);
 
@@ -43,19 +43,19 @@ class DSU {
     }
 
     public void union(int x, int y) {
-        int rootOfX = find(x);
-        int rootOfY = find(y);
+        int rootX = find(x);
+        int rootY = find(y);
 
-        if (rootOfX == rootOfY) {
+        if (rootX == rootY) {
             return;
         }
 
-        if (size[rootOfX] < size[rootOfY]) {
-            parent[rootOfX] = rootOfY;
-            size[rootOfY] += size[rootOfX];
+        if (size[rootX] < size[rootY]) {
+            parent[rootX] = rootY;
+            size[rootY] += size[rootX];
         } else {
-            parent[rootOfY] = rootOfX;
-            size[rootOfX] += size[rootOfY];
+            parent[rootY] = rootX;
+            size[rootX] += size[rootY];
         }
 
         count--;
