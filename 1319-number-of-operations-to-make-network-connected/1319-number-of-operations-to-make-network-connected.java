@@ -1,25 +1,27 @@
 class Solution {
     public int makeConnected(int n, int[][] edges) {
-        DSU dsu=new DSU(n);
+        DSU dsu = new DSU(n);
 
-        for(int[]edge:edges){
-            dsu.union(edge[0],edge[1]);
+        for (int[] edge : edges) {
+            dsu.union(edge[0], edge[1]);
         }
 
-        int count=-1;
-        for(int i=0;i<dsu.parent.length;i++){
-            if(dsu.parent[i]==i){
-                count++;
+        int components = 0;
+        for (int i = 0; i < dsu.parent.length; i++) {
+            if (dsu.find(i) == i) {
+                components++;
             }
         }
-        return dsu.count<count?-1:count;
+
+        int neededEdges = components - 1;
+        return dsu.extraEdges >= neededEdges ? neededEdges : -1;
     }
 }
 
 class DSU {
     int[] parent;
     int[] size;
-    int count = 0;
+    int extraEdges = 0;
 
     public DSU(int n) {
         parent = new int[n];
@@ -40,23 +42,21 @@ class DSU {
         return parent[x];
     }
 
-    public void union(int x,int y){
-        int rootX=find(x);
-        int rootY=find(y);
+    public void union(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
 
-        if(rootX==rootY){
-            count++;
+        if (rootX == rootY) {
+            extraEdges++;
             return;
         }
 
-        if(size[rootX]<size[rootY]){
-            parent[rootX]=rootY;
-            size[rootY]+=size[rootX];
-        }
-        else{
-            parent[rootY]=rootX;
-            size[rootX]+=size[rootY];
+        if (size[rootX] < size[rootY]) {
+            parent[rootX] = rootY;
+            size[rootY] += size[rootX];
+        } else {
+            parent[rootY] = rootX;
+            size[rootX] += size[rootY];
         }
     }
-
 }
