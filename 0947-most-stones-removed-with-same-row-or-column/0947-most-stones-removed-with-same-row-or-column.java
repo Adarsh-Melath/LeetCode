@@ -1,35 +1,32 @@
 class Solution {
     public int removeStones(int[][] stones) {
-        int n = stones.length;
+        int OFFSET=10001;
+        DSU dsu=new DSU(20002);
 
-        if (n == 1)
-            return 0;
+        HashSet<Integer> usedNodes=new HashSet<>();
 
-        DSU dsu = new DSU(n);
+        for(int[]stone:stones){
+            int rowNode=stone[0];
+            int colNode=stone[1]+OFFSET;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {
-                    dsu.union(i, j);
-                }
-            }
+            dsu.union(rowNode,colNode);
+
+            usedNodes.add(rowNode);
+            usedNodes.add(colNode);
         }
 
-        int components = 0;
+        HashSet<Integer> roots=new HashSet<>();
+        for(int node:usedNodes){
+            roots.add(dsu.find(node));
+        }        
 
-        for (int i = 0; i < n; i++) {
-            if (dsu.find(i) == i)
-                components++;
-        }
-
-        return n-components;
+        return stones.length-roots.size();
     }
 }
 
 class DSU {
     int[] parent;
     int[] size;
-    int count = 0;
 
     public DSU(int n) {
         parent = new int[n];
@@ -54,8 +51,9 @@ class DSU {
         int rootX = find(x);
         int rootY = find(y);
 
-        if (rootX == rootY)
+        if (rootX == rootY) {
             return;
+        }
 
         if (size[rootX] < size[rootY]) {
             parent[rootX] = rootY;
