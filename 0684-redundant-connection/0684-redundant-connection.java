@@ -1,27 +1,25 @@
 class Solution {
     public int[] findRedundantConnection(int[][] edges) {
-        int n = edges.length;
-
-        DSU dsu = new DSU(n);
+        DSU dsu = new DSU(edges.length + 1);
 
         for (int[] edge : edges) {
             dsu.union(edge[0], edge[1]);
         }
 
-        return dsu.redundant;
+        return dsu.duplicate;
     }
 }
 
 class DSU {
-    int[] parent;
-    int[] size;
-    int[] redundant = new int[2];
+    int parent[];
+    int size[];
+    int duplicate[] = new int[2];
 
     public DSU(int n) {
-        parent = new int[n + 1];
-        size = new int[n + 1];
+        parent = new int[n];
+        size = new int[n];
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
             parent[i] = i;
             size[i] = 1;
         }
@@ -36,22 +34,22 @@ class DSU {
         return parent[x];
     }
 
-    public void union(int x, int y){
-        int rootOfX=find(x);
-        int rootOfY=find(y);
+    public void union(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
 
-        if(rootOfX==rootOfY){
-            redundant[0]=x;
-            redundant[1]=y;
+        if (rootX == rootY){
+            duplicate[0]=x;
+            duplicate[1]=y;
             return;
         }
 
-        if(size[rootOfX]<size[rootOfY]){
-            parent[rootOfX]=rootOfY;
-            size[rootOfY]+=size[rootOfY];
-        }else{
-            parent[rootOfY]=rootOfX;
-            size[rootOfX]+=size[rootOfY];
+        if (size[rootX] < size[rootY]) {
+            parent[rootX] = rootY;
+            size[rootY] += size[rootX];
+        } else {
+            parent[rootY] = rootX;
+            size[rootX] += size[rootY];
         }
     }
 }
