@@ -1,24 +1,30 @@
 class Solution {
     public int removeStones(int[][] stones) {
-        DSU dsu=new DSU(stones.length);
+        int OFFSET = 10001;
+        DSU dsu = new DSU(20002);
 
-        for(int i=0;i<stones.length;i++){
-            for(int j=i+1;j<stones.length;j++){
-                if(stones[i][0] == stones[j][0] || stones[i][1] ==stones[j][1]){
-                    dsu.union(i,j);
-                }
+        HashSet<Integer> nodes = new HashSet<>();
+
+        for (int[] stone : stones) {
+            int rowNode = stone[0];
+            int colNode = stone[1] + OFFSET;
+
+            dsu.union(rowNode, colNode);
+
+            nodes.add(rowNode);
+            nodes.add(colNode);
+        }
+
+        HashSet<Integer> roots = new HashSet<>();
+
+        for (int node : nodes) {
+            if (dsu.find(node) == node) {
+                roots.add(node);
             }
         }
 
-        int components =0;
+        return stones.length - roots.size();
 
-        for(int i=0;i<stones.length;i++){
-            if(dsu.find(i)==i){
-                components++;
-            }
-        }
-
-        return stones.length-components;
     }
 }
 
@@ -26,14 +32,13 @@ class DSU {
     int[] parent;
     int[] size;
 
-    public DSU(int n){
-        parent=new int[n];
-        size=new int[n];
+    public DSU(int n) {
+        parent = new int[n];
+        size = new int[n];
 
-        for(int i=0;i<n;i++)
-        {
-            parent[i]=i;
-            size[i]=1;
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+            size[i] = 1;
         }
     }
 
@@ -47,21 +52,20 @@ class DSU {
         return parent[x];
     }
 
-    public void union(int x,int y){
-        int rootX=find(x);
-        int rootY=find(y);
+    public void union(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
 
-        if(rootX==rootY){
+        if (rootX == rootY) {
             return;
         }
 
-        if(size[rootX]<size[rootY]){
-            parent[rootX]=rootY;
-            size[rootY]+=size[rootX];
-        }
-        else{
-            parent[rootY]=rootX;
-            size[rootX]+=size[rootX];
+        if (size[rootX] < size[rootY]) {
+            parent[rootX] = rootY;
+            size[rootY] += size[rootX];
+        } else {
+            parent[rootY] = rootX;
+            size[rootX] += size[rootX];
         }
     }
 }
