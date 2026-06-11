@@ -3,8 +3,6 @@ class Solution {
         int n = isConnected.length;
         DSU dsu = new DSU(n);
 
-        int provinces = 0;
-
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (isConnected[i][j] == 1) {
@@ -13,23 +11,19 @@ class Solution {
             }
         }
 
-        for (int i = 0; i < n; i++) {
-            if (dsu.find(i) == i) {
-                provinces++;
-            }
-        }
-
-        return provinces;
+        return dsu.count;
     }
 }
 
 class DSU {
     int[] parent;
     int size[];
+    int count;
 
     public DSU(int n) {
         parent = new int[n];
         size = new int[n];
+        count=n;
 
         for (int i = 0; i < n; i++) {
             parent[i] = i;
@@ -51,6 +45,8 @@ class DSU {
         int rootX = find(x);
         int rootY = find(y);
 
+        if(rootX==rootY){return}
+
         if (size[rootX] == size[rootY]) {
             parent[rootX] = rootY;
             size[rootY] += size[rootX];
@@ -58,5 +54,6 @@ class DSU {
             parent[rootY] = rootX;
             size[rootX] += size[rootY];
         }
+        count--;
     }
 }
