@@ -1,10 +1,12 @@
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         DSU dsu = new DSU(n);
+
         for (int[] edge : edges) {
             dsu.union(edge[0], edge[1]);
         }
-        return dsu.find(source) == dsu.find(destination);
+
+        return dsu.find(source)==dsu.find(destination);
     }
 }
 
@@ -22,13 +24,13 @@ class DSU {
         }
     }
 
-    public int find(int x){
-        if(parent[x]==x)
-        {
+    public int find(int x) {
+        if (parent[x] == x) {
             return x;
         }
 
-        parent[x]=find(parent[x]);
+        parent[x] = find(parent[x]);
+
         return parent[x];
     }
 
@@ -40,7 +42,7 @@ class DSU {
             return;
         }
 
-        if (size[rootX] > size[rootY]) {
+        if (size[x] < size[y]) {
             parent[rootX] = rootY;
             size[rootY] += size[rootX];
         } else {
@@ -48,5 +50,4 @@ class DSU {
             size[rootX] += size[rootY];
         }
     }
-
 }
