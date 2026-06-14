@@ -1,27 +1,31 @@
 class Solution {
-    public int makeConnected(int n, int[][] edges) {
+    public int makeConnected(int n, int[][] connections) {
         DSU dsu = new DSU(n);
 
-        for (int[] edge : edges) {
+        for (int[] edge : connections) {
             dsu.union(edge[0], edge[1]);
         }
 
-        int components = 0;
-        for (int i = 0; i < dsu.parent.length; i++) {
-            if (dsu.find(i) == i) {
+        int components=0;
+
+        for(int i=0;i<n;i++)
+        {
+            if(dsu.find(i)==i)
+            {
                 components++;
             }
         }
 
-        int neededEdges = components - 1;
-        return dsu.extraEdges >= neededEdges ? neededEdges : -1;
+        int neededCables=components-1;
+
+        return dsu.extraCables >= neededCables ? neededCables :-1;
     }
 }
 
 class DSU {
-    int[] parent;
-    int[] size;
-    int extraEdges = 0;
+    int parent[];
+    int size[];
+    int extraCables = 0;
 
     public DSU(int n) {
         parent = new int[n];
@@ -34,8 +38,9 @@ class DSU {
     }
 
     public int find(int x) {
-        if (parent[x] == x)
+        if (parent[x] == x) {
             return x;
+        }
 
         parent[x] = find(parent[x]);
 
@@ -47,7 +52,7 @@ class DSU {
         int rootY = find(y);
 
         if (rootX == rootY) {
-            extraEdges++;
+            extraCables++;
             return;
         }
 
