@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0162-find-peak-element](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0162-find-peak-element/) | Medium |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0198-house-robber](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0198-house-robber/) | Medium |
+| [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
 | [0283-move-zeroes](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0315-count-of-smaller-numbers-after-self/) | Hard |
@@ -92,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0088-merge-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0088-merge-sorted-array/) | Easy |
+| [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
 | [0977-squares-of-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0977-squares-of-a-sorted-array/) | Easy |
 ## Binary Search
@@ -127,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0138-copy-list-with-random-pointer](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0146-lru-cache/) | Medium |
+| [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Adarsh-Melath/LeetCode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
