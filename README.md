@@ -59,6 +59,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0198-house-robber](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0198-house-robber/) | Medium |
 | [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0283-move-zeroes](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0315-count-of-smaller-numbers-after-self/) | Hard |
@@ -133,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0146-lru-cache/) | Medium |
 | [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
+| [0219-contains-duplicate-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/Adarsh-Melath/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Adarsh-Melath/LeetCode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
@@ -234,6 +236,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
+| [0219-contains-duplicate-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
