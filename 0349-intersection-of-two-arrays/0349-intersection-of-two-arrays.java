@@ -7,19 +7,19 @@ class Solution {
         }
 
         HashSet<Integer> intersection = new HashSet<>();
-
         for (int num : nums2) {
-            if (set1.contains(num)) {
+            if (set1.contains(num))
                 intersection.add(num);
-            }
         }
 
-        int arr[] = new int[intersection.size()];
-        int i = 0;
+        int[] result = new int[intersection.size()];
+
+        int index = 0;
         for (int num : intersection) {
-            arr[i++] = num;
+            result[index++] = num;
         }
 
-        return arr;
+        return result;
+
     }
 }
