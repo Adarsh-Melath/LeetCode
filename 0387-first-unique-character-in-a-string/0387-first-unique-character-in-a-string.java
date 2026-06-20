@@ -1,17 +1,18 @@
 class Solution {
     public int firstUniqChar(String s) {
         int[] hash = new int[26];
+  int [] count = new int[26];
 
-        for (char ch : s.toCharArray()) {
-            hash[ch - 'a']++;
+        int n = s.length();
+
+        for(int i = 0; i < n; i++){
+            count[s.charAt(i) - 'a']++;
         }
 
-        int index = 0;
-        for (char ch : s.toCharArray()) {
-            if (hash[ch - 'a'] == 1) {
-                return index;
+        for(int i = 0; i < n; i++){
+            if(count[s.charAt(i)-'a'] == 1){
+                return i;
             }
-            index++;
         }
         return -1;
     }
