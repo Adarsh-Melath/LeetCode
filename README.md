@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0125-valid-palindrome](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/Adarsh-Melath/LeetCode/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Adarsh-Melath/LeetCode/tree/master/0383-ransom-note) |
+| [0387-first-unique-character-in-a-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 ## Stack
@@ -141,6 +142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/Adarsh-Melath/LeetCode/tree/master/0242-valid-anagram) |
 | [0349-intersection-of-two-arrays](https://github.com/Adarsh-Melath/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0383-ransom-note](https://github.com/Adarsh-Melath/LeetCode/tree/master/0383-ransom-note) |
+| [0387-first-unique-character-in-a-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Adarsh-Melath/LeetCode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
@@ -296,4 +298,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0383-ransom-note](https://github.com/Adarsh-Melath/LeetCode/tree/master/0383-ransom-note) |
+| [0387-first-unique-character-in-a-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+## Queue
+|  |
+| ------- |
+| [0387-first-unique-character-in-a-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 <!---LeetCode Topics End-->
