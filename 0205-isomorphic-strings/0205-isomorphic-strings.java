@@ -7,19 +7,16 @@ class Solution {
             char sChar = s.charAt(i);
             char tChar = t.charAt(i);
 
-            if (used.contains(tChar) && !hash.containsKey(sChar))
-                return false;
-            hash.put(sChar, tChar);
-
-            used.add(tChar);
+            if (hash.containsKey(sChar)) {
+                if (hash.get(sChar) != tChar)
+                    return false;
+            } else {
+                if (used.contains(tChar))
+                    return false;
+                hash.put(sChar, tChar);
+                used.add(tChar);
+            }
         }
-
-        StringBuilder string = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            string.append(hash.get(s.charAt(i)));
-        }
-
-        return t.contentEquals(string);
-
+        return true;
     }
 }
