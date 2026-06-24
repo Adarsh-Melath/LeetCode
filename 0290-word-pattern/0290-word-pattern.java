@@ -1,9 +1,12 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
         ArrayList<String> list = new ArrayList<>(Arrays.asList(s.split(" ")));
-        if(pattern.length()!=list.size())return false;
+
+        if (pattern.length() != list.size())
+            return false;
+
         HashMap<Character, String> mapPS = new HashMap<>();
-        HashSet<String> used = new HashSet<>();
+        HashMap<String, Character> mapSP = new HashMap<>();
 
         for (int i = 0; i < pattern.length(); i++) {
             char ch = pattern.charAt(i);
@@ -14,11 +17,14 @@ class Solution {
                     return false;
                 }
             } else {
-                if (used.contains(word)) {
-                    return false;
-                }
                 mapPS.put(ch, word);
-                used.add(word);
+            }
+
+            if (mapSP.containsKey(word)) {
+                if (mapSP.get(word) != ch)
+                    return false;
+            } else {
+                mapSP.put(word, ch);
             }
         }
 
