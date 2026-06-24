@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0020-valid-parentheses](https://github.com/Adarsh-Melath/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0049-group-anagrams](https://github.com/Adarsh-Melath/LeetCode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0125-valid-palindrome](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0125-valid-palindrome/) | Easy |
 | [0205-isomorphic-strings](https://github.com/Adarsh-Melath/LeetCode/tree/master/0205-isomorphic-strings) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0040-combination-sum-ii/) | Medium |
 | [0042-trapping-rain-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0042-trapping-rain-water/) | Hard |
 | [0046-permutations](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0046-permutations/) | Medium |
+| [0049-group-anagrams](https://github.com/Adarsh-Melath/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0074-search-a-2d-matrix/) | Medium |
@@ -97,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
 | [0018-4sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
+| [0049-group-anagrams](https://github.com/Adarsh-Melath/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0075-sort-colors/) | Medium |
 | [0088-merge-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0088-merge-sorted-array/) | Easy |
@@ -135,6 +138,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0049-group-anagrams](https://github.com/Adarsh-Melath/LeetCode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0138-copy-list-with-random-pointer](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
