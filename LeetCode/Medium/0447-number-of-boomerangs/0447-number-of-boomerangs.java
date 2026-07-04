@@ -4,20 +4,20 @@ class Solution {
         int n = points.length;
 
         for (int i = 0; i < n; i++) {
+            HashMap<Integer, Integer> map = new HashMap<>();
             for (int j = 0; j < n; j++) {
-                if(i==j)continue;
-                for (int k = 0; k < n; k++) {
-                    if(i==k || j==k)continue;
+                if (i == j)
+                    continue;
+                int x = points[i][0] - points[j][0];
+                int y = points[i][1] - points[j][1];
 
-                    int dx1=points[i][0]-points[j][0];
-                    int dy1=points[i][1]-points[j][1];
-                    int distIJ= dx1*dx1 + dy1*dy1;
+                int square = x * x + y * y;
 
-                    int dx2=points[i][0]-points[k][0];
-                    int dy2=points[i][1]-points[k][1];
-                    int distIK= dx2*dx2 + dy2*dy2;
-
-                    if(distIJ==distIK)numberOfBoomerangs++;
+                map.put(square, map.getOrDefault(square, 0) + 1);
+            }
+            for (int k : map.values()) {
+                if (k > 1) {
+                    numberOfBoomerangs += k * (k - 1);
                 }
             }
         }
