@@ -1,47 +1,55 @@
 class TimeMap {
-    class Data {
-        int timestamp;
-        String value;
+    private Map<String, List<Pair>> map;
 
-        Data(int timestamp, String value) {
-            this.timestamp = timestamp;
-            this.value = value;
-        }
-    }
-
-    Map<String, List<Data>> map;
-
-    TimeMap() {
+    public TimeMap() {
         map = new HashMap<>();
     }
 
     public void set(String key, String value, int timestamp) {
-        map.computeIfAbsent(key, k -> new ArrayList<>()).add(new Data(timestamp, value));
+        map.computeIfAbsent(key, k -> new ArrayList<>()).add(new Pair(timestamp, value));
     }
 
     public String get(String key, int timestamp) {
-        if (!map.containsKey(key))
-            return "";
-
-        List<Data> list = map.get(key);
-        return binarysearch(list, timestamp);
-    }
-
-    public String binarysearch(List<Data> list, int timestamp) {
+        List<Pair> pairs = map.get(key);
+        if(pairs==null)return"";
         int left = 0;
-        int right = list.size() - 1;
-
-        String res = "";
+        int right = pairs.size() - 1;
+        Pair result = null;
 
         while (left <= right) {
-            int mid = (left + right);
-            if (list.get(mid).timestamp <= timestamp) {
-                res = list.get(mid).value;
+            int mid = (left + right) / 2;
+
+            if (pairs.get(mid).getTimestamp() <= timestamp) {
+                result = pairs.get(mid);
                 left = mid + 1;
             } else
                 right = mid - 1;
         }
-
-        return res;
+        return result==null ? "":result.getValue();
     }
 }
+
+class Pair {
+    private int timestamp;
+    private String value;
+
+    public Pair(int timestamp, String value) {
+        this.timestamp = timestamp;
+        this.value = value;
+    }
+
+    public int getTimestamp() {
+        return timestamp;
+    }
+
+    public String getValue() {
+        return value;
+    }
+}
+
+/**
+ * Your TimeMap object will be instantiated and called as such:
+ * TimeMap obj = new TimeMap();
+ * obj.set(key,value,timestamp);
+ * String param_2 = obj.get(key,timestamp);
+ */
