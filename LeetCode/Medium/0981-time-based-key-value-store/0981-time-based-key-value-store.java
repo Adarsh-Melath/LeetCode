@@ -1,5 +1,6 @@
 class TimeMap {
-    private Map<String, List<Pair>> map;
+
+    Map<String, List<Pair>> map;
 
     public TimeMap() {
         map = new HashMap<>();
@@ -10,22 +11,21 @@ class TimeMap {
     }
 
     public String get(String key, int timestamp) {
-        List<Pair> pairs = map.get(key);
-        if(pairs==null)return"";
+        List<Pair> list = map.get(key);
+        if(list==null)return "";
         int left = 0;
-        int right = pairs.size() - 1;
-        Pair result = null;
-
+        int right = list.size() - 1;
+        Pair answer = null;
         while (left <= right) {
-            int mid = (left + right) / 2;
+            int mid = left + (right - left) / 2;
 
-            if (pairs.get(mid).getTimestamp() <= timestamp) {
-                result = pairs.get(mid);
+            if (list.get(mid).getTimestamp() <= timestamp) {
+                answer = list.get(mid);
                 left = mid + 1;
             } else
                 right = mid - 1;
         }
-        return result==null ? "":result.getValue();
+        return answer!=null?answer.getValue():"";
     }
 }
 
