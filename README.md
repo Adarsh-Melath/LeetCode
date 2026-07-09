@@ -86,6 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0977-squares-of-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0977-squares-of-a-sorted-array/) | Easy |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
+| [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 ## Math
 | Problem Name | Difficulty |
@@ -326,4 +327,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0149-max-points-on-a-line](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0149-max-points-on-a-line/) | Hard |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
 <!---LeetCode Topics End-->
