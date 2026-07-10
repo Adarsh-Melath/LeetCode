@@ -7,8 +7,6 @@ class Solution {
             prefix_sum[i] = nums[i] + prefix_sum[i - 1];
         }
 
-        System.out.println(Arrays.toString(prefix_sum));
-
         for (int i = 0; i < n; i++) {
             int left = i == 0 ? 0 : prefix_sum[i-1];
             int right = i == n - 1 ? 0 : prefix_sum[n-1] - prefix_sum[i];
