@@ -79,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0454-4sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0454-4sum-ii/) | Medium |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
 | [0540-single-element-in-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0540-single-element-in-a-sorted-array/) | Medium |
+| [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
 | [0724-find-pivot-index](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
@@ -167,6 +168,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0447-number-of-boomerangs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0447-number-of-boomerangs/) | Medium |
 | [0454-4sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0454-4sum-ii/) | Medium |
+| [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Adarsh-Melath/LeetCode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
@@ -335,6 +337,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0303-range-sum-query-immutable](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0303-range-sum-query-immutable/) | Easy |
+| [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
 | [0724-find-pivot-index](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
 | [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
 | [1991-find-the-middle-index-in-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1991-find-the-middle-index-in-array/) | Easy |
