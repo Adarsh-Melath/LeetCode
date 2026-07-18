@@ -1,21 +1,21 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        int[] prefix = new int[nums.length];
-        prefix[0] = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            prefix[i] = prefix[i - 1] + nums[i];
-        }
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = i; j < nums.length; j++) {
-                int subarraysum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-                if (subarraysum == k) {
-                    count++;
-                }
-            }
+        map.put(0, 1);
+        int prefix = 0;
+        int answer = 0;
+
+        for (int num : nums) {
+            prefix += num;
+
+            int previousS = prefix - k;
+
+            answer += map.getOrDefault(previousS, 0);
+
+            map.put(prefix, map.getOrDefault(prefix, 0) + 1);
         }
 
-        return count++;
+        return answer;
     }
 }
