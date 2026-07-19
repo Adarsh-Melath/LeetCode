@@ -11,8 +11,6 @@ class Solution {
             freqs[magazine.charAt(i) - 'a']--;
         }
 
-        System.out.println(Arrays.toString(freqs));
-
         for (int freq : freqs) {
             if (freq > 0) {
                 return false;
