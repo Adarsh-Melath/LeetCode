@@ -1,7 +1,5 @@
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        if (nums.length < 2)
-            return false;
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);
         int prefix = 0;
