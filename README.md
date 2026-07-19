@@ -78,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0447-number-of-boomerangs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0447-number-of-boomerangs/) | Medium |
 | [0454-4sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0454-4sum-ii/) | Medium |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
+| [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 | [0525-contiguous-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0525-contiguous-array/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0540-single-element-in-a-sorted-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
@@ -103,6 +104,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0149-max-points-on-a-line](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0149-max-points-on-a-line/) | Hard |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0447-number-of-boomerangs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0447-number-of-boomerangs/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -171,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
 | [0447-number-of-boomerangs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0447-number-of-boomerangs/) | Medium |
 | [0454-4sum-ii](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0454-4sum-ii/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 | [0525-contiguous-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0930-binary-subarrays-with-sum/) | Medium |
@@ -344,6 +347,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0303-range-sum-query-immutable](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0303-range-sum-query-immutable/) | Easy |
+| [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 | [0525-contiguous-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
 | [0724-find-pivot-index](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
