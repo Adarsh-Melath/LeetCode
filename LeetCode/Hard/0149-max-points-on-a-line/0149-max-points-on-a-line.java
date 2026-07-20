@@ -4,9 +4,9 @@ class Solution {
         for (int i = 0; i < points.length; i++) {
             HashMap<String, Integer> map = new HashMap<>();
             int max = 0;
-            for (int j = 0; j < points.length; j++) {
-                if (i == j)
-                    continue;
+            for (int j = i+1; j < points.length; j++) {
+                // if (i == j)
+                    // continue;
                 int dx = points[j][0] - points[i][0];
                 int dy = points[j][1] - points[i][1];
 
@@ -26,7 +26,7 @@ class Solution {
                 map.put(key, map.getOrDefault(key, 0) + 1);
                 max = Math.max(max, map.getOrDefault(key, 0));
             }
-            answer = Math.max(max+1, answer);
+            answer = Math.max(max + 1, answer);
         }
         return answer;
     }
