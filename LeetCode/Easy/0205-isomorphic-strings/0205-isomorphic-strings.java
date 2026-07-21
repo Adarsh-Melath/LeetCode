@@ -4,20 +4,20 @@ class Solution {
         HashMap<Character, Character> ts = new HashMap<>();
 
         for (int i = 0; i < s.length(); i++) {
-            char sch = s.charAt(i);
-            char tch = t.charAt(i);
+            char sc = s.charAt(i);
+            char tc = t.charAt(i);
 
-            if (st.containsKey(sch)) {
-                if (st.get(sch) != tch)
+            if (st.containsKey(sc)) {
+                if (st.get(sc) != tc)
                     return false;
             } else
-                st.put(sch, tch);
+                st.put(sc, tc);
 
-            if (ts.containsKey(tch)) {
-                if (ts.get(tch) != sch)
+            if (ts.containsKey(tc)) {
+                if (ts.get(tc) != sc)
                     return false;
             } else
-                ts.put(tch, sch);
+                ts.put(tc, sc);
         }
         return true;
     }
