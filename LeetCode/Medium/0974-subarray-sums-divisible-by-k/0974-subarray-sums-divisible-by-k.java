@@ -7,11 +7,10 @@ class Solution {
 
         for (int num : nums) {
             prefix += num;
-            int remainder = ((prefix % k) + k) % k;
 
-            if (map.containsKey(remainder)) {
-                answer += map.getOrDefault(remainder,0);
-            }
+            int remainder = ((prefix % k) + k)%k ;
+
+            answer += map.getOrDefault(remainder, 0) ;
             map.put(remainder, map.getOrDefault(remainder, 0) + 1);
         }
         return answer;
