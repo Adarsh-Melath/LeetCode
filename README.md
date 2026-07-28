@@ -95,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0974-subarray-sums-divisible-by-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0977-squares-of-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0977-squares-of-a-sorted-array/) | Easy |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1011-capacity-to-ship-packages-within-d-days/) | Medium |
+| [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
 | [1109-corporate-flight-bookings](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1109-corporate-flight-bookings/) | Medium |
 | [1314-matrix-block-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1314-matrix-block-sum/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
@@ -129,6 +130,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0349-intersection-of-two-arrays](https://github.com/Adarsh-Melath/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0853-car-fleet](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0853-car-fleet/) | Medium |
 | [0977-squares-of-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0977-squares-of-a-sorted-array/) | Easy |
+| [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -319,6 +321,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0023-merge-k-sorted-lists/) | Hard |
+| [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -360,8 +363,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0724-find-pivot-index](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0724-find-pivot-index/) | Easy |
 | [0930-binary-subarrays-with-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0930-binary-subarrays-with-sum/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0974-subarray-sums-divisible-by-k/) | Medium |
+| [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
 | [1109-corporate-flight-bookings](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1109-corporate-flight-bookings/) | Medium |
 | [1314-matrix-block-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1314-matrix-block-sum/) | Medium |
 | [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
 | [1991-find-the-middle-index-in-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1991-find-the-middle-index-in-array/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
 <!---LeetCode Topics End-->
