@@ -1,7 +1,7 @@
 class Solution {
     public int maxNonOverlapping(int[] nums, int target) {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);
+        HashSet<Integer> set = new HashSet<>();
+        set.add(0);
         int prefix = 0;
         int answer = 0;
 
@@ -9,11 +9,11 @@ class Solution {
             prefix += num;
 
             int needed = prefix - target;
-            if (map.containsKey(needed)) {
+            if (set.contains(needed)) {
                 answer++;
-                map.clear();
+                set.clear();
             }
-            map.put(prefix, map.getOrDefault(prefix, 0) + 1);
+            set.add(prefix);
         }
 
         return answer;
