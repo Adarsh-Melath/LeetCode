@@ -101,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1314-matrix-block-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1314-matrix-block-sum/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
 | [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1991-find-the-middle-index-in-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 ## Math
@@ -191,6 +192,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0974-subarray-sums-divisible-by-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1248-count-number-of-nice-subarrays/) | Medium |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [2540-minimum-common-value](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -283,6 +285,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -372,6 +375,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1248-count-number-of-nice-subarrays](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1248-count-number-of-nice-subarrays/) | Medium |
 | [1314-matrix-block-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1314-matrix-block-sum/) | Medium |
 | [1480-running-sum-of-1d-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1480-running-sum-of-1d-array/) | Easy |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/1991-find-the-middle-index-in-array/) | Easy |
 ## Simulation
 | Problem Name | Difficulty |
