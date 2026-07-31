@@ -11,8 +11,6 @@ class Solution {
             diff[to] -= numPassengers;
         }
 
-        System.out.println(Arrays.toString(diff));
-
         int passengers = 0;
         for (int i = 0; i < diff.length; i++) {
             passengers += diff[i];
