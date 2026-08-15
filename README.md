@@ -389,4 +389,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1094-car-pooling](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1094-car-pooling/) | Medium |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/master/0523-continuous-subarray-sum) |
 <!---LeetCode Topics End-->
