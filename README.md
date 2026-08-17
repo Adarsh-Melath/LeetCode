@@ -48,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0001-two-sum/) | Easy |
 | [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/Adarsh-Melath/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/Adarsh-Melath/LeetCode/tree/master/0027-remove-element) |
@@ -126,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/Adarsh-Melath/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0049-group-anagrams](https://github.com/Adarsh-Melath/LeetCode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0056-merge-intervals/) | Medium |
@@ -229,6 +231,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0011-container-with-most-water](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/Adarsh-Melath/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0018-4sum/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0026-remove-duplicates-from-sorted-array/) | Easy |
