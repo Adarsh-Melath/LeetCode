@@ -3,16 +3,15 @@ class Solution {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
-
-            if (map.containsKey(num)) {
-                int prevIndex = map.get(num);
-                if (i - prevIndex <= k)
+            if (map.containsKey(nums[i])) {
+                int previousIndex = map.get(nums[i]);
+                if (i - previousIndex <= k)
                     return true;
             }
 
-            map.put(num, i);
+            map.put(nums[i], i);
         }
+
         return false;
     }
 }
