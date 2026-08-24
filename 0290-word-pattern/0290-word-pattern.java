@@ -1,33 +1,33 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        ArrayList<String> list = new ArrayList<>(Arrays.asList(s.split(" ")));
+        List<String> words = Arrays.asList(s.split("\\s+"));
 
-        if (pattern.length() != list.size())
+        if (pattern.length() != words.size())
             return false;
 
-        HashMap<Character, String> mapPS = new HashMap<>();
-        HashMap<String, Character> mapSP = new HashMap<>();
+        HashMap<Character, String> ps = new HashMap<>();
+        HashMap<String, Character> sp = new HashMap<>();
 
         for (int i = 0; i < pattern.length(); i++) {
-            char ch = pattern.charAt(i);
-            String word = list.get(i);
+            Character currentPattern = pattern.charAt(i);
+            String currentWord = words.get(i);
 
-            if (mapPS.containsKey(ch)) {
-                if (!mapPS.get(ch).equals(word)) {
+            if (ps.containsKey(currentPattern)) {
+                String previousWord = ps.get(currentPattern);
+                if (!previousWord.equals(currentWord))
                     return false;
-                }
             } else {
-                mapPS.put(ch, word);
+                ps.put(currentPattern, currentWord);
             }
 
-            if (mapSP.containsKey(word)) {
-                if (mapSP.get(word) != ch)
+            if (sp.containsKey(currentWord)) {
+                Character previousCharacter = sp.get(currentWord);
+                if (previousCharacter != currentPattern)
                     return false;
             } else {
-                mapSP.put(word, ch);
+                sp.put(currentWord, currentPattern);
             }
         }
-
         return true;
     }
 }
