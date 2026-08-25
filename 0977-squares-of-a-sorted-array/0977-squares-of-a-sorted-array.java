@@ -8,16 +8,6 @@ class Solution {
             nums[i] = nums[i] * nums[i];
         }
 
-        int breakPoint = 0;
-        int smallest = Integer.MAX_VALUE;
-
-        for (int i = 0; i < n; i++) {
-            if (smallest < nums[i]) {
-                breakPoint = i;
-                break;
-            }
-        }
-
         int writer = n - 1;
         int reader1 = 0;
         int reader2 = n - 1;
