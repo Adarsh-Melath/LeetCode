@@ -1,10 +1,34 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        //brute
-        for (int i = m; i < m + n; i++) {
-            nums1[i] = nums2[i - m];
+        //brute : o(nlogn) o(1)
+        // for (int i = m; i < m + n; i++) {
+        //     nums1[i] = nums2[i - m];
+        // }
+
+        // Arrays.sort(nums1);
+
+        //optimal
+        int writer = m + n - 1;
+        int reader1 = m - 1;
+        int reader2 = n - 1;
+
+        while (reader1 >= 0 && reader2 >= 0) {
+            if (nums2[reader2] > nums1[reader1]) {
+                nums1[writer] = nums2[reader2--];
+            } else {
+                nums1[writer] = nums1[reader1--];
+            }
+
+            writer--;
         }
 
-        Arrays.sort(nums1);
+        while (reader2 >= 0) {
+            nums1[writer--] = nums2[reader2--];
+
+        }
+
+        while (reader1 >= 0) {
+            nums1[writer--] = nums1[reader1--];
+        }
     }
 }
