@@ -115,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0002-add-two-numbers/) | Medium |
 | [0149-max-points-on-a-line](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0149-max-points-on-a-line/) | Hard |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0150-evaluate-reverse-polish-notation/) | Medium |
+| [0202-happy-number](https://github.com/Adarsh-Melath/LeetCode/tree/master/0202-happy-number) |
 | [0447-number-of-boomerangs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0447-number-of-boomerangs/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1248-count-number-of-nice-subarrays/) | Medium |
@@ -180,6 +181,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0146-lru-cache/) | Medium |
 | [0149-max-points-on-a-line](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0149-max-points-on-a-line/) | Hard |
+| [0202-happy-number](https://github.com/Adarsh-Melath/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/Adarsh-Melath/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0217-contains-duplicate](https://github.com/Adarsh-Melath/LeetCode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0219-contains-duplicate-ii) |
@@ -245,6 +247,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0141-linked-list-cycle/) | Easy |
 | [0143-reorder-list](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0143-reorder-list/) | Medium |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0167-two-sum-ii-input-array-is-sorted/) | Medium |
+| [0202-happy-number](https://github.com/Adarsh-Melath/LeetCode/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0283-move-zeroes/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0287-find-the-duplicate-number/) | Medium |
 | [0344-reverse-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0344-reverse-string) |
@@ -402,5 +405,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Floyd's Cycle Finding Algorithm
 |  |
 | ------- |
+| [0202-happy-number](https://github.com/Adarsh-Melath/LeetCode/tree/master/0202-happy-number) |
 | [0287-find-the-duplicate-number](https://github.com/Adarsh-Melath/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
