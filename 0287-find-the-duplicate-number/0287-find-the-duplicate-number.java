@@ -1,16 +1,29 @@
 class Solution {
     public int findDuplicate(int[] nums) {
-        //brute : which actually use a o(n) spacce
+        //optimal
 
-        HashSet<Integer> set=new HashSet<>();
+        int slow=nums[0];
+        int fast=nums[0];
 
-        for(int num:nums)
+        while(true)
         {
-            if(!set.add(num))
+            slow=nums[slow];
+            fast=nums[nums[fast]];
+
+            if(slow==fast)
             {
-                return num;
+                break;
             }
+        }        
+
+        slow=nums[0];
+
+        while(slow!=fast)
+        {
+            slow=nums[slow];
+            fast=nums[fast];
         }
-        return -1;
+
+        return slow;
     }
 }
