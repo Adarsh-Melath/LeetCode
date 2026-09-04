@@ -1,23 +1,30 @@
 class Solution {
     public boolean isHappy(int n) {
-        int number = n;
         HashSet<Integer> set = new HashSet<>();
-        while (number != 1) {
-            int square = 0;
-            if (set.contains(number)) {
-                return false;
-            }
-            set.add(number);
-            while (number > 0) {
-                int remainder = number % 10;
-                square += Math.pow(remainder, 2);
-                number /= 10;
-            }
 
-            number = square;
+        int number = n;
+
+        while (number != 1) {
+            int sq = square(number);
+
+            if (set.contains(sq))
+                return false;
+
+            set.add(sq);
+            number = sq;
         }
 
         return true;
+    }
 
+    private int square(int number) {
+        int sq = 0;
+        while (number > 0) {
+            int remainder = number % 10;
+            sq+=remainder*remainder;
+            number/=10;
+        }
+
+        return sq;
     }
 }
