@@ -1,17 +1,17 @@
 class Solution {
     public boolean isHappy(int n) {
-        HashSet<Integer> set = new HashSet<>();
+        int slow = n;
+        int fast = n;
 
-        int number = n;
+        while (fast != 1) {
+            slow=square(slow);
+            fast=square(square(fast));
 
-        while (number != 1) {
-            int sq = square(number);
-
-            if (set.contains(sq))
+            if(fast==1)return true;
+            if(slow==fast)
+            {
                 return false;
-
-            set.add(sq);
-            number = sq;
+            }
         }
 
         return true;
@@ -21,8 +21,8 @@ class Solution {
         int sq = 0;
         while (number > 0) {
             int remainder = number % 10;
-            sq+=remainder*remainder;
-            number/=10;
+            sq += remainder * remainder;
+            number /= 10;
         }
 
         return sq;
