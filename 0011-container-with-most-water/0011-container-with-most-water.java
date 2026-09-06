@@ -4,13 +4,11 @@ class Solution {
         int left = 0;
         int right = height.length - 1;
         while (left < right) {
-            int base = right - left;
-
             if (height[left] < height[right]) {
-                maxA = Math.max(maxA, (base * height[left]));
+                maxA = Math.max(maxA, ((right - left) * height[left]));
                 left++;
             } else {
-                maxA = Math.max(maxA, (base * height[right]));
+                maxA = Math.max(maxA, ((right - left) * height[right]));
                 right--;
             }
         }
