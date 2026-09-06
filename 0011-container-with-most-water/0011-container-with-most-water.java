@@ -8,16 +8,12 @@ class Solution {
             int base = right - left;
 
             if (height[left] < height[right]) {
-                 maxA = Math.max(maxA, (base * height[left]));
+                maxA = Math.max(maxA, (base * height[left]));
                 left++;
-            }
-            else {
-                maxA=Math.max(maxA,(base*height[right]));
+            } else {
+                maxA = Math.max(maxA, (base * height[right]));
                 right--;
             }
-           
-
-            System.out.println(maxA);
         }
         return maxA;
     }
