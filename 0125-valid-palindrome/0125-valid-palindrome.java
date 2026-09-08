@@ -13,8 +13,6 @@ class Solution {
 
         String newString = new String(string).toUpperCase();
 
-        System.out.println(newString);
-
         int left = 0;
         int right = newString.length() - 1;
 
