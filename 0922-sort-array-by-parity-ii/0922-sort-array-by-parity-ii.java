@@ -11,6 +11,8 @@ class Solution {
                 j += 2;
             } else {
                 swap(nums, i, j);
+                i+=2;
+                j+=2;
             }
         }
 
