@@ -1,13 +1,13 @@
 class Solution {
     public boolean isPalindrome(String s) {
         s = s.replaceAll("[^a-zA-Z0-9]", "");
-        s = s.toUpperCase();
+        String newString= s.toUpperCase();
 
         int left = 0;
-        int right = s.length() - 1;
+        int right = newString.length() - 1;
 
         while (left < right) {
-            if (s.charAt(left) != s.charAt(right)) {
+            if (newString.charAt(left) != newString.charAt(right)) {
                 return false;
             }
 
