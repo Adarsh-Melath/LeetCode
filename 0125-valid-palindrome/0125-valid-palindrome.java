@@ -1,7 +1,19 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        s = s.replaceAll("[^a-zA-Z0-9]", "");
-        String newString= s.toUpperCase();
+        // s = s.replaceAll("[^a-zA-Z0-9]", "");
+        // String newString= s.toUpperCase();
+
+        StringBuilder string = new StringBuilder();
+
+        for (char ch : s.toCharArray()) {
+            if (Character.isLetterOrDigit(ch)) {
+                string.append(ch);
+            }
+        }
+
+        String newString = new String(string).toUpperCase();
+
+        System.out.println(newString);
 
         int left = 0;
         int right = newString.length() - 1;
