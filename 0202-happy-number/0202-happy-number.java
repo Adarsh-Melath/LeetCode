@@ -1,17 +1,15 @@
 class Solution {
     public boolean isHappy(int n) {
 
-        HashSet<Integer> set = new HashSet<>();
-        int number = n;
-        while (number != 1) {
-            int square = sq(number);
+        int slow=n;
+        int fast=n;
 
-            if (set.contains(square))
-                return false;
+        while(fast!=1){
+            slow=sq(slow);
+            fast=sq(sq(fast));
 
-            set.add(square);
-
-            number = square;
+            if(fast==1)return true;
+            if(slow==fast)return false;
         }
         return true;
     }
