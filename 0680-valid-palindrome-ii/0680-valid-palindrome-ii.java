@@ -7,7 +7,7 @@ class Solution {
                 left++;
                 right--;
             } else if (s.charAt(left) != s.charAt(right)) {
-                if (checkPalindrome(s.substring(left, right )) || checkPalindrome(s.substring(left + 1, right+1))) {
+                if (checkPalindrome(s,left,right-1) || checkPalindrome(s,left+1,right)) {
                     return true;
                 }
 
@@ -18,10 +18,7 @@ class Solution {
         return true;
     }
 
-    private boolean checkPalindrome(String s) {
-        int left = 0;
-        int right = s.length() - 1;
-
+    private boolean checkPalindrome(String s, int left,int right) {
         while (left < right) {
             if (s.charAt(left) != s.charAt(right)) {
                 return false;
