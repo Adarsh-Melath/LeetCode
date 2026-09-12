@@ -7,8 +7,7 @@ class Solution {
         }
 
         List<Integer> intersections = new ArrayList<>();
-        for (int i = 0; i < nums2.length; i++) {
-            int num=nums2[i];
+        for (int num:nums2) {
             if (numbers1.contains(num)) {
                 intersections.add(num);
                 numbers1.remove(Integer.valueOf(num));
