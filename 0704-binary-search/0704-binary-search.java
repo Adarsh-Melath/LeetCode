@@ -15,6 +15,7 @@ class Solution {
             int mid = (low + high) / 2;
 
             if (nums[mid] == target) {
+                System.gc();
                 return mid;
             } else if (nums[mid] > target) {
                 high = mid - 1;
@@ -22,6 +23,8 @@ class Solution {
                 low = mid + 1;
             }
         }
+
+        System.gc();
         return -1;
     }
 
