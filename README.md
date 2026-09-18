@@ -162,6 +162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0315-count-of-smaller-numbers-after-self](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0315-count-of-smaller-numbers-after-self/) | Hard |
 | [0349-intersection-of-two-arrays](https://github.com/Adarsh-Melath/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0374-guess-number-higher-or-lower](https://github.com/Adarsh-Melath/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 | [0493-reverse-pairs](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0493-reverse-pairs/) | Hard |
 | [0540-single-element-in-a-sorted-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0540-single-element-in-a-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0704-binary-search/) | Easy |
@@ -429,4 +430,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Adarsh-Melath/LeetCode/tree/master/0075-sort-colors) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/Adarsh-Melath/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
