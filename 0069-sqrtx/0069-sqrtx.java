@@ -4,7 +4,6 @@ class Solution {
             return x;
         }
         
-        long ans = 0;
         long low = 0;
         long high = x / 2;
 
@@ -13,7 +12,6 @@ class Solution {
 
             if(mid*mid==x)return (int)mid;
             if (mid * mid <x) {
-                ans = mid;
                 low = mid + 1;
             } else {
                 high = mid - 1;
