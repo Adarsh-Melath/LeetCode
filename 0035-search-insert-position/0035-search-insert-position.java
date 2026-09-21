@@ -1,21 +1,23 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        //optimal O(logN) O(1)
+        int answer=0;
 
-        int left = 0;
-        int right = nums.length - 1;
-        int result = 0;
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (nums[mid] >= target) {
-                result = mid;
-                right = mid - 1;
-            } else {
-                left = mid + 1;
-                result=left;
+        int low=0;;
+        int high=nums.length-1;
+
+        while(low<=high){
+            int mid=low+(high-low)/2;
+
+            if(nums[mid]==target)return mid;
+
+            if(nums[mid]>target){
+                answer=mid;
+                high=mid-1;
+            }else{
+                low=mid+1;
+                answer=low;
             }
         }
-
-        return result;
+        return answer;
     }
 }
