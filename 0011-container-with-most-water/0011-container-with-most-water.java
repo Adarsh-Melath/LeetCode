@@ -1,18 +1,20 @@
 class Solution {
-    public int maxArea(int[] height) {
-        // brute
-        int mostWater = 0;
+    public int maxArea(int[] nums) {
+        //max area
 
+        int maxA = 0;
         int left = 0;
-        int right = height.length - 1;
+        int right = nums.length - 1;
+
         while (left < right) {
-            int base = right - left;
-            if (height[left] < height[right]) {
-                mostWater = Math.max(mostWater, height[left++] * base);
-            }else{
-                mostWater=Math.max(mostWater,height[right--]*base);
+            if (nums[left] < nums[right]) {
+                maxA = Math.max(maxA, (right - left) * nums[left]);
+                left++;
+            } else {
+                maxA = Math.max(maxA, (right - left) * nums[right]);
+                right--;
             }
         }
-        return mostWater;
+        return maxA;
     }
 }
