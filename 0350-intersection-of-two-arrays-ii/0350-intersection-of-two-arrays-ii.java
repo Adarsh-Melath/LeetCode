@@ -8,9 +8,9 @@ class Solution {
 
         List<Integer> list = new ArrayList<>();
         for (int num : nums2) {
-            if (map.getOrDefault(num,0)!=0) {
+            if (map.containsKey(num)) {
                 list.add(num);
-                map.computeIfPresent(num, (key, val) -> val > 0 ? val - 1 : null);
+                map.computeIfPresent(num, (key, val) -> val > 1 ? val - 1 : null);
             }
         }
 
