@@ -12,8 +12,6 @@ class Solution {
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
-            System.out.println(mid);
-
             long totalH = 0;
             int index = 0;
             while (index < piles.length) {
