@@ -21,9 +21,11 @@ class Solution {
     public boolean canEatInTime(int piles[], int k, int h) {
         long totalH = 0;
         for (int pile : piles) {
-            int div = pile / k;
-            totalH +=div;
-            if(pile%k!=0)totalH++;
+            // int div = pile / k;
+            // totalH +=div;
+            // if(pile%k!=0)totalH++;
+
+            totalH += (pile + k - 1) / k;
         }
 
         return totalH <= h;
