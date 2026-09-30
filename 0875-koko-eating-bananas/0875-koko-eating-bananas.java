@@ -8,7 +8,6 @@ class Solution {
 
         int low = 1;
         int high = max;
-        int answer = 0;
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
@@ -19,12 +18,11 @@ class Solution {
             }
 
             if (totalH <= h) {
-                answer = mid;
                 high = mid - 1;
             } else
                 low = mid + 1;
         }
 
-        return answer;
+        return low;
     }
 }
