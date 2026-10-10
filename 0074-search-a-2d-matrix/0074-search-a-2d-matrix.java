@@ -1,27 +1,29 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        return bs(matrix, target);
+        return binarySearch(matrix, target);
     }
 
-    public boolean bs(int[][] matrix, int target) {
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-
+    private boolean binarySearch(int[][] matrix, int target) {
+        int m = matrix.length;
+        int n = matrix[0].length;
         int low = 0;
-        int high = rows * cols - 1;
+        int high = m * n - 1;
 
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int row = mid / cols;
-            int col = mid % cols;
+            int row = mid / n;
+            int col = mid % n;
+
             int element = matrix[row][col];
+
             if (element == target)
                 return true;
-            else if (element < target)
-                low = mid + 1;
-            else
+            else if (target<element)
                 high = mid - 1;
+            else
+                low = mid + 1;
         }
+
         return false;
     }
 }
