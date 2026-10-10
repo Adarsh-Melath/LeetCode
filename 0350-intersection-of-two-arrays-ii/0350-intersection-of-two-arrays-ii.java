@@ -6,15 +6,22 @@ class Solution {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        List<Integer> intersection = new ArrayList<>(); //O(n)
+        List<Integer> list = new ArrayList<>(); //O(n)
 
         for (int num : nums2) {//O(n)
             if (map.containsKey(num)) {
-                intersection.add(num);
+                list.add(num);
                 map.computeIfPresent(num, (key, val) -> val > 1 ? val - 1 : null);
             }
         }
 
-        return intersection.stream().mapToInt(Integer::intValue).toArray();
+        int[] result = new int[list.size()];
+
+        int index = 0;
+        for (int num : list) {
+            result[index++] = num;
+        }
+
+        return result;
     }
 }
