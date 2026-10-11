@@ -3,17 +3,17 @@ class Solution {
         int low = weights[0];
         int high = 0;
 
+        // O(n)
         for (int weight : weights) {
             low = Math.max(low, weight);
             high+=weight;
         }
 
-        // int answer = 0;
+        // O(log(high-low)*O(n))
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
             if (count(weights, days, mid)) {
-                // answer = mid;
                 high = mid - 1;
             } else
                 low = mid + 1;
