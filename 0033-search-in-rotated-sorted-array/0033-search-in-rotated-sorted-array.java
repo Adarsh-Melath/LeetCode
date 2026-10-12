@@ -17,8 +17,6 @@ class Solution {
             }
         }
 
-        System.out.println(pivot);
-
         int index1 = bs(nums, 0, pivot, target);
         int index2 = bs(nums, pivot + 1, nums.length - 1, target);
 
@@ -38,9 +36,6 @@ class Solution {
     }
 
     private int bs(int[] nums, int low, int high, int target) {
-
-        System.out.println(low);
-        System.out.println(high);
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
