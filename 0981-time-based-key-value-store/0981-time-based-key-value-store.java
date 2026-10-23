@@ -12,9 +12,10 @@ class TimeMap {
     public String get(String key, int timestamp) {
         List<Pair> list = map.get(key);
 
+        if(list==null)return "";
         Pair pair = null;
         int low = 0;
-        int high = list!=null?list.size() - 1:-1;
+        int high = list.size()-1;
         while (low <=high) {
             int mid = low + (high - low) / 2;
 
