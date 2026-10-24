@@ -19,8 +19,6 @@ class Solution {
             writer--;
         }
 
-        System.out.println(left);
-        System.out.println(right);
         result[0] = nums[right]*nums[right];
         return result;
     }
