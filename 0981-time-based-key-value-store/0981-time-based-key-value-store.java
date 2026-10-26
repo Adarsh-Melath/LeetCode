@@ -7,7 +7,6 @@ class TimeMap {
 
     public void set(String key, String value, int timestamp) {
         map.computeIfAbsent(key, k -> new ArrayList<>()).add(new Pair(timestamp, value));
-        // System.out.println(map.values());
     }
 
     public String get(String key, int timestamp) {
@@ -41,10 +40,6 @@ class Pair {
         this.timestamp = timestamp;
         this.value = value;
     }
-
-    // public String toString() {
-    //     return this.timestamp + " " + this.value;
-    // }
 }
 /**
  * Your TimeMap object will be instantiated and called as such:
