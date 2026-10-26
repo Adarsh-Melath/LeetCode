@@ -7,28 +7,29 @@ class TimeMap {
 
     public void set(String key, String value, int timestamp) {
         map.computeIfAbsent(key, k -> new ArrayList<>()).add(new Pair(timestamp, value));
+        // System.out.println(map.values());
     }
 
     public String get(String key, int timestamp) {
-        List<Pair> list = map.get(key);
+        List<Pair> pairs = map.get(key);
 
-        if(list==null)return "";
+        if (pairs == null)
+            return "";
         Pair pair = null;
         int low = 0;
-        int high = list.size()-1;
-        while (low <=high) {
+        int high = pairs.size() - 1;
+
+        while (low <= high) {
             int mid = low + (high - low) / 2;
 
-             if (list.get(mid).timestamp <= timestamp) {
-                pair=list.get(mid);
+            if (pairs.get(mid).timestamp <= timestamp) {
+                pair = pairs.get(mid);
                 low = mid + 1;
-            } else {
-
+            } else
                 high = mid - 1;
-            }
         }
 
-        return pair!=null?pair.value:"";
+        return pair == null ? "" : pair.value;
     }
 }
 
@@ -40,8 +41,11 @@ class Pair {
         this.timestamp = timestamp;
         this.value = value;
     }
-}
 
+    // public String toString() {
+    //     return this.timestamp + " " + this.value;
+    // }
+}
 /**
  * Your TimeMap object will be instantiated and called as such:
  * TimeMap obj = new TimeMap();
