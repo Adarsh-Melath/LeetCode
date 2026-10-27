@@ -8,7 +8,7 @@ class Solution {
             int mid = low + (high - low) / 2;
             int element = nums[mid];
 
-            if (element < nums[n - 1]) {
+            if (element <nums[high]) {
                 high = mid;
             } else {
                 low = mid + 1;
