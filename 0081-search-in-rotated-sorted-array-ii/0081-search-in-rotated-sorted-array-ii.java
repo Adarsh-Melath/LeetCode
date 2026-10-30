@@ -11,8 +11,9 @@ class Solution {
             if (nums[mid] == target)
                 return true;
             
-            if(nums[mid]==nums[low]){
+            if(nums[mid]==nums[low] && nums[mid]==nums[high]){
                 low++;
+                high--;
                 continue;
             }
             else if (nums[mid] <= nums[high]) {
