@@ -4,14 +4,16 @@ class Solution {
         int low = 0;
         int high = n - 1;
 
-        if(n==1 && nums[0]==target)return true;
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
             if (nums[mid] == target)
                 return true;
             
-            if(nums[mid]==nums[low])low++;
+            if(nums[mid]==nums[low]){
+                low++;
+                continue;
+            }
             else if (nums[mid] <= nums[high]) {
                 if (target > nums[mid] && target <= nums[high])
                     low = mid + 1;
