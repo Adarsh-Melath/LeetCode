@@ -4,27 +4,24 @@ class Solution {
         int low = 0;
         int high = n - 1;
 
+        if(n==1 && nums[0]==target)return true;
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
-            if (target == nums[mid])
+            if (nums[mid] == target)
                 return true;
-
-            if (nums[mid] == nums[low]) {
-                low++;
-                continue;
-            }
             
-            if (nums[mid] <= nums[n - 1]) {
-                if (target > nums[mid] && target <= nums[high]) {
+            if(nums[mid]==nums[low])low++;
+            else if (nums[mid] <= nums[high]) {
+                if (target > nums[mid] && target <= nums[high])
                     low = mid + 1;
-                } else
-                    high = mid - 1;
-            } else {
-                if (target >= nums[0] && target < nums[mid]) {
-                    high = mid - 1;
-                } else
-                    low = mid + 1;
+                else
+                    high = mid-1;
+            }else{
+                if(target>=nums[low]  && target<nums[mid])
+                    high=mid-1;
+                else 
+                    low=mid+1;
             }
         }
 
