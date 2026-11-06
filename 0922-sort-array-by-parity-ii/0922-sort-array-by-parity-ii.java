@@ -4,16 +4,18 @@ class Solution {
         int j = 1;
         int n = nums.length;
         while (i < n && j < n) {
-            if (nums[i] % 2 == 0) {
+            while (i < n - 1 && nums[i] % 2 == 0) {
                 i += 2;
-            } else if (nums[j] % 2 == 1) {
+            }
+            while (j < n - 1 && nums[j] % 2 == 1) {
                 j += 2;
-            } else {
+            }
+
+            if (i < n && j < n) {
                 swap(nums, i, j);
                 i += 2;
                 j += 2;
             }
-
         }
 
         return nums;
