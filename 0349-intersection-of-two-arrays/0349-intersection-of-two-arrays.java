@@ -1,31 +1,25 @@
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        // m=nums1.length
-        // n=nums2.length
+        int n1 = nums1.length - 1;
+        int n2 = nums2.length - 1;
 
-        //O(M)
-        Set<Integer> numberSet1 = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
-        // O(M)
         for (int num : nums1) {
-            numberSet1.add(num);
+            set.add(num);
         }
 
-        //O(N)
         Set<Integer> intersection = new HashSet<>();
 
-        //O(N)
         for (int num : nums2) {
-            if (numberSet1.contains(num)) {
+            if (set.contains(num))
                 intersection.add(num);
-            }
         }
 
-        int index = 0;
         int[] result = new int[intersection.size()];
-
+        int i = 0;
         for (int num : intersection) {
-            result[index++] = num;
+            result[i++] = num;
         }
 
         return result;
