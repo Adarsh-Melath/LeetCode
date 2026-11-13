@@ -8,11 +8,13 @@ class Solution {
         Set<Character> set = new HashSet<>();
         int n = s.length();
         while (right < n) {
-            char ch = s.charAt(right);
-            while (set.contains(ch)) {
-                set.remove(s.charAt(left++));
+            char rch = s.charAt(right);
+            while (set.contains(rch)) {
+                char lch=s.charAt(left);
+                left++;
+                set.remove(lch);
             }
-            set.add(ch);
+            set.add(rch);
             max = Math.max(max, set.size());
             right++;
         }
