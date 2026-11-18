@@ -1,40 +1,44 @@
 class Solution {
     public int splitArray(int[] nums, int k) {
-        int low=nums[0];
-        int high=0;
+        int low = nums[0];
+        int high = 0;
 
-        for(int num:nums){
-            low=Math.max(low,num);
-            high+=num;
+        for (int num : nums) {
+            low = Math.max(low, num);
+            high += num;
         }
 
-        int ans=0;
-        while(low<=high){
-            int mid=low+(high-low)/2;
+        System.out.println(low+" "+high);
 
-            if(canFit(nums,mid,k)){
-                ans=mid;
-                high=mid-1;
-            }else low=mid+1;
+        int ans = 0;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (checkFit(nums, mid, k)) {
+                ans = mid;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
         }
 
         return ans;
     }
 
-    public boolean canFit(int[]nums,int maximum,int k){
-        int count=1;
-        int sum=0;
+    private boolean checkFit(int[] nums, int msum, int k) {
+        int count = 1;
 
-        for(int num:nums){
-            if(sum+num>maximum){
+        int totalSum = 0;
+
+        for (int num : nums) {
+            if (totalSum + num > msum) {
                 count++;
-                sum=num;
-            }else{
-                sum+=num;
-            }
+                totalSum = 0;
+            } 
+                totalSum += num;
+            
         }
-        
 
-        return count<=k ? true: false;
+        return count <= k ? true : false;
     }
 }
