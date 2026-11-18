@@ -8,8 +8,6 @@ class Solution {
             high += num;
         }
 
-        System.out.println(low+" "+high);
-
         int ans = 0;
         while (low <= high) {
             int mid = low + (high - low) / 2;
