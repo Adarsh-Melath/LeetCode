@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0383-ransom-note](https://github.com/Adarsh-Melath/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
+| [0567-permutation-in-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0981-time-based-key-value-store](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0981-time-based-key-value-store/) | Medium |
 ## Stack
@@ -213,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0523-continuous-subarray-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0523-continuous-subarray-sum/) | Medium |
 | [0525-contiguous-array](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0560-subarray-sum-equals-k/) | Medium |
+| [0567-permutation-in-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0567-permutation-in-string) |
 | [0930-binary-subarrays-with-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0930-binary-subarrays-with-sum/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/Adarsh-Melath/LeetCode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0974-subarray-sums-divisible-by-k/) | Medium |
@@ -270,6 +272,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0344-reverse-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0344-reverse-string) |
 | [0349-intersection-of-two-arrays](https://github.com/Adarsh-Melath/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0567-permutation-in-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0905-sort-array-by-parity](https://github.com/Adarsh-Melath/LeetCode/tree/master/0905-sort-array-by-parity) |
 | [0922-sort-array-by-parity-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0922-sort-array-by-parity-ii) |
@@ -333,6 +336,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Hard/0076-minimum-window-substring/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Adarsh-Melath/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0424-longest-repeating-character-replacement/) | Medium |
+| [0567-permutation-in-string](https://github.com/Adarsh-Melath/LeetCode/tree/master/0567-permutation-in-string) |
 | [0643-maximum-average-subarray-i](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Easy/0643-maximum-average-subarray-i/) | Easy |
 | [0930-binary-subarrays-with-sum](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/0930-binary-subarrays-with-sum/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/Adarsh-Melath/LeetCode/tree/main/LeetCode/Medium/1248-count-number-of-nice-subarrays/) | Medium |
