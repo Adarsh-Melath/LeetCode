@@ -6,10 +6,11 @@ class Solution {
 
         while (right < prices.length) {
             if (prices[right] > prices[left]) {
-                mProfit = Math.max(mProfit,prices[right] - prices[left]);
+                mProfit = Math.max(mProfit, prices[right] - prices[left]);
             } else {
-                left=right;
+                left = right;
             }
+
             right++;
         }
         return mProfit;
