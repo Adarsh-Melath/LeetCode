@@ -4,11 +4,11 @@ class Solution {
 
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(nums[i])) {
-                int j = map.get(nums[i]);
-                if (i - j <= k)
+                int previousIndex = map.get(nums[i]);
+
+                if (i - previousIndex <= k)
                     return true;
             }
-
             map.put(nums[i], i);
         }
 
